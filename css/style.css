@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* Обнуляющие стили */
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.button {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px 13px;
+  background-color: white;
+  border: 1px solid #b9b9b9;
+  color: #6d6d6d;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pod_photo {
+  padding-top: 50px;
+  font-family: "Golos Text", serif;
+  font-weight: 400;
+}
+
+body {
+  font-family: "PTSerif", serif;
+  font-weight: 400;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 20%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #cccccc;
+  position: fixed;
+  background-color: white;
+  z-index: 3;
+}
+
+.logo {
+  margin-top: 10px;
+}
+
+.button-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-header {
+  padding: 0 13px;
+  margin-left: 10px;
+  border-radius: 7px;
+  border: 0;
+  background-color: rgb(228, 228, 228);
+  line-height: 0%;
+  cursor: pointer;
+}
+
+.osn {
+  padding: 150px 20%;
+}
+
+.preh1 {
+  font-family: "Golos Text", serif;
+  font-weight: 400;
+  color: rgb(124, 124, 124);
+}
+
+h1 {
+  font-size: 300%;
+  line-height: 95%;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.button {
+  margin-top: 10px;
+}
+
+img {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  padding: 30px 0;
+  font-weight: normal;
+  font-size: 200%;
+  line-height: 95%;
+}
+
+p {
+  padding: 10px 0;
+  font-size: 110%;
+}
+p para a {
+  color: #1e2fc4;
+  text-decoration: underline;
+}
+
+.vramke {
+  margin: 20px 5%;
+  border: 1px solid #a8a8a8;
+  border-radius: 6px;
+  padding: 20px 5%;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+.slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  color: rgb(155, 155, 155);
+  cursor: pointer;
+  font-size: 24px;
+  border: 1px solid rgb(155, 155, 155);
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.tags {
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.tags span {
+  font-family: "Golos Text", serif;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.card {
+  width: 30%;
+  position: relative;
+  padding: 20px;
+}
+.card img {
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  z-index: -10;
+}
+.card h3 {
+  font-size: 150%;
+}
+.card p {
+  font-family: "Golos Text", serif;
+  font-weight: 400;
+  line-height: 18px;
+}

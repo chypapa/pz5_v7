@@ -1,0 +1,185 @@
+@import "./_null";
+
+%button{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 13px;
+    background-color: white;
+    border: 1px solid #b9b9b9;
+    color: #6d6d6d;
+    border-radius: 5px;
+    cursor: pointer;
+}
+%pod_photo{
+    padding-top: 50px;
+    font-family: "Golos Text", serif;
+    font-weight: 400;
+}
+
+
+body {
+    font-family: "PTSerif", serif;
+    font-weight: 400;
+    
+}
+
+//Header
+header{
+    width: 100%;
+    display: flex;
+    padding: 10px 20%;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc;
+    position: fixed;
+    background-color: white;
+    z-index: 3;
+}
+.logo {
+    margin-top: 10px;
+}
+.button-list {
+    display: flex;
+}
+.btn-header {
+    padding: 0 13px;
+    margin-left: 10px;
+    border-radius: 7px;
+    border: 0;
+    background-color: rgb(228, 228, 228);
+    line-height: 0%;
+    cursor: pointer;
+    
+}
+
+//
+.osn{
+    padding: 150px 20%;
+}
+.preh1{
+    font-family: "Golos Text", serif;
+    font-weight: 400;
+    color: rgb(124, 124, 124);
+}
+h1{
+    font-size: 300%;
+    line-height: 95%;
+    font-weight: 400;
+    padding: 20px 0;
+}
+.button{
+    @extend %button;
+    margin-top: 10px;
+}
+img{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.pod_photo{
+    @extend %pod_photo;
+}
+h2{
+    padding: 30px 0;
+    font-weight: normal;
+    font-size: 200%;
+    line-height: 95%;
+}
+p{
+    padding: 10px 0;
+    font-size: 110%;
+    para
+    a{
+        color: #1e2fc4;
+        text-decoration: underline;
+    }
+}
+.vramke{
+    margin: 20px 5%;
+    border: 1px solid #a8a8a8;
+    border-radius: 6px;
+    padding: 20px 5%;
+}
+
+
+.slider {
+    position: relative;
+    
+    overflow: hidden;
+    margin: 50px 0;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    
+}
+
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255);
+    border: none;
+    padding: 10px;
+    color: rgb(155, 155, 155);
+    cursor: pointer;
+    font-size: 24px;
+    border: 1px solid rgb(155, 155, 155);
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.tags{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    span{
+       
+        font-family: "Golos Text", serif;
+        font-weight: 400;
+        line-height: 50px;
+    }
+}
+.card{
+   
+    width: 30%;
+    position: relative;
+    padding: 20px;
+    img{
+        opacity: 0.3;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        z-index: -10;
+    }
+    h3{
+        font-size: 150%;
+    }
+    p{
+        font-family: "Golos Text", serif;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    
+    
+}
+
